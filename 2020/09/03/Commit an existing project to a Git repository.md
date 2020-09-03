@@ -20,12 +20,12 @@ git init
 git add $파일의_이름
 git add *
 ```
-폴더내의 몇몇 파일 혹은 전체 파일을 스테이징 영역으로 올립니다.  
+폴더내의 일부 혹은 전체 파일들을 스테이징 영역으로 올립니다.  
 저장소와 작업 트리 간에 존재하는 가상의 스테이징 영역을 인덱스 (Index) 라고 부릅니다.
 ```bash
 git commit -m "$커밋_메세지"
 ```
-스테이징 영역으로 올린 변경사항들을 확정합니다.  
+인덱스로 올린 변경사항들을 확정합니다.  
 아직 변경사항들이 외부 레포지토리에 반영되지는 않은 상태입니다.
 ```bash
 git remote add origin $레포지토리의_주소 (e.g. git remote add origin https://github.com/nhlnhl/nearby_restaurants.git)
@@ -36,7 +36,7 @@ Github에서 생성한 레포지토리의 주소를 origin으로 설정합니다
 ```bash
 git pull origin master --allow-unrelated-histories
 ```
-레포지토리가 비어 있지 않고 파일이 존재한다면, origin (아까 remote로 설정했던 레포지토리) 을 현재 저장소의 master로 pull하고 merge합니다.
+만약 레포지토리가 비어 있지 않고 파일이 존재한다면, origin (아까 remote로 설정한 레포지토리) 을 현재 저장소의 master로 pull하고 merge합니다.
 ```bash
 git push origin master
 ```
