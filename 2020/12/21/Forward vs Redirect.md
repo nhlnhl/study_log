@@ -10,7 +10,7 @@ In this way, the request and response will be shared along with all the informat
 But the requester won't be able to know which URL he or she is looking at.
 1. Redirect
 ```
-respond.sendRedirect("www.example.com");
+response.sendRedirect("www.example.com");
 ```
 This sendRedirect() method leads the requester to move on.  
 The requester will send a new connection request to the given URL and previous information will be forgotten.
